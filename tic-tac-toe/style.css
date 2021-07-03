@@ -1,0 +1,131 @@
+/* Fonts from google */
+/* Noto sans TC */ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+/* Open Sans Condensed */ @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+/* Dosis */ @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+/* Balsamiq Sans */ @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.whole-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Header */
+
+.header{
+    width: 100%;
+    height: 10%;
+    background: #d6d5d2;
+    text-align: center;
+}
+
+.header h1{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.header p{
+    font-family: 'Dosis', sans-serif;
+}
+
+
+/* Body */
+
+.body-container{
+    width: 100%;
+    height: 90%;
+    background-color: #f3f3f3;
+}
+
+.body{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto; 
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.score-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+}
+
+.score-container div{
+    padding: 10px 1px;
+    background: rgba(217, 213, 208, 0.4);
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #82807e;
+}
+
+.black{
+    background: #000000;
+}
+
+.score-container .current-player{
+    background: rgba(217, 213, 208, 0.9);
+    color: #525252;
+}
+
+.box-container{
+    background: #ededed;
+    width: 50%;
+    height: 60%;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.box-container div{
+    background: white;
+    border: 1px solid silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Balsamiq Sans', cursive; 
+    font-size: 4rem;
+}
+
+.result{
+    margin-top: 40px;
+}
+
+.result p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5rem;
+}
+
+.restart{
+    margin-top: 40px;
+}
+
+.btn{
+    padding: 3px 18px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #b8b3a5;
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.6rem;
+    transition: background-color .2s ease-in-out;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #cfcdca;
+}
+
+.btn:focus{
+    outline: none;
+}
